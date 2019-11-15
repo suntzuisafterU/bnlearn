@@ -1,0 +1,5 @@
+# object files
+**/*.o
+
+src/bnlearn.so
+src/symbols.rds
