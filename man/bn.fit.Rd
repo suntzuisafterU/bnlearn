@@ -82,6 +82,7 @@ bn.net(x, debug = FALSE)
   \code{resid} the residuals. \code{configs} should contain the configurations
   if the discrete parents of the conditional Gaussian node, stored as a factor.
 
+  # TODO: This sounds like what we are looking for.  Can we use this?
   \code{custom.fit()} takes a set of user-specified distributions and their
   parameters and uses them to build a \code{bn.fit} object. Its purpose is to
   specify a Bayesian network (complete with the parameters, not only the
@@ -108,7 +109,7 @@ bn.net(x, debug = FALSE)
   parameter estimates for discrete and conditional Gaussian nodes when there
   are (discrete) parents configurations that are not observed in \code{data}.
   To avoid this either set \code{replace.unidentifiable} to \code{TRUE} or, in
-  the case of discrete networks, use \code{method = "bayes"}. 
+  the case of discrete networks, use \code{method = "bayes"}.
 
 }
 \value{
