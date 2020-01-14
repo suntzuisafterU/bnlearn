@@ -1,0 +1,723 @@
+
+acyclic.c,67
+static SEXP build_return_array(6,133
+SEXP is_pdag_acyclic(47,952
+
+allocations.c,167
+void *Calloc1D(Calloc1D3,28
+void BN_Free1D(19,230
+void **Calloc2D(Calloc2D25,282
+void BN_Free2D(42,642
+void ***Calloc3D(Calloc3D52,759
+void BN_Free3D(68,1158
+
+allsubs.test.c,371
+#define PVALUE(10,232
+static SEXP ast_prepare_retval(17,487
+static SEXP ast_discrete(49,1251
+static SEXP ast_gaustests_complete(141,4210
+static SEXP ast_gaustests_with_missing(273,8271
+static SEXP ast_micg_complete(426,13189
+static SEXP ast_micg_with_missing(579,17523
+static SEXP ast_dperm(758,23872
+static SEXP ast_gperm(832,26108
+SEXP allsubs_test(954,29223
+
+alpha.star.c,151
+static int deff_node_root(6,113
+static int deff_node(17,275
+static double entropy1d(31,549
+static double entropy2d(44,843
+SEXP alpha_star(59,1277
+
+arcs2amat.c,46
+SEXP arcs2amat(6,129
+SEXP amat2arcs(43,1002
+
+arcs2elist.c,101
+SEXP arcs2elist(8,247
+SEXP arcs2welist(19,578
+SEXP arcs2uelist(120,3131
+SEXP elist2arcs(209,5238
+
+averaging.c,154
+SEXP smart_network_averaging(7,144
+static void mean_strength_overall(66,1880
+static void mean_strength_direction(112,3174
+SEXP mean_strength(203,5829
+
+bayesian.network.c,48
+SEXP nbr2arcs(5,110
+SEXP all_equal_bn(72,1715
+
+bind.c,23
+SEXP arcs_rbind 6,130
+
+bn.recovery.c,24
+SEXP bn_recovery(5,124
+
+bootstrap.c,113
+SEXP bootstrap_strength_counters(8,193
+SEXP bootstrap_arc_coefficients(48,1141
+SEXP bootstrap_reduce(125,3460
+
+cache.structure.c,190
+#define BLANKET	4,56
+#define NEIGHBOUR	5,76
+#define PARENT	6,97
+#define CHILD	7,116
+SEXP cache_structure(13,285
+SEXP cache_partial_structure(53,1293
+SEXP cache_node_structure(82,2163
+
+cextend.c,89
+static void is_a_sink(5,83
+static int all_adjacent(39,952
+SEXP pdag_extension(75,1872
+
+cg.assumptions.c,61
+SEXP arcs_cg_assumptions(7,182
+SEXP cg_banned_arcs(90,2557
+
+cg.loglikelihood.c,88
+double ccgloglik(9,197
+double c_fast_ccgloglik(54,1425
+double loglik_cgnode(110,2748
+
+cg.mutual.information.c,114
+double c_micg(8,203
+double c_cmicg(65,1719
+double c_cmicg_unroll(113,3554
+double c_micg_with_missing(167,5280
+
+cg.predictive.loglikelihood.c,104
+static double c_pcgnode(9,197
+static double pcgnode(74,1809
+double predictive_loglik_cgnode(129,3335
+
+common.c,285
+int c_is(5,103
+SEXP getListElement(21,398
+SEXP int2fac(42,777
+void c_qr_matrix(85,1812
+void INV_UPTRI3(118,2591
+SEXP normalize_cpt(144,2925
+void *DATAPTR(DATAPTR180,3763
+SEXP mkRealVec(199,3994
+void setDimNames(219,4317
+SEXP subset_by_name(234,4697
+bool all_equal(313,6835
+
+conditional.least.squares.c,206
+static void c_cls0(8,223
+static void c_cls1(55,1343
+static void c_cls2(168,4268
+void c_clsp(331,9262
+static void c_cls0_with_missing(476,13111
+void c_clsp_with_missing(564,15136
+void c_cls(749,19884
+
+configurations.c,103
+SEXP configurations(5,127
+SEXP c_configurations(12,323
+void cfg(51,1276
+void c_fast_config(75,1870
+
+contingency.tables.c,106
+int fill_1d_table(5,108
+int fill_2d_table(25,602
+int fill_3d_table(57,1435
+SEXP minimal_table(92,2459
+
+covariance.c,399
+covariance new_covariance(5,88
+void print_covariance(24,440
+void copy_covariance(37,665
+void covariance_drop_variable(43,826
+void FreeCOV(54,1166
+void c_covmat(64,1316
+void c_covmat_with_missing(99,2153
+void c_update_covmat(186,3880
+double c_sse(217,4663
+double c_mean(230,4889
+void c_meanvec(244,5125
+void c_ssevec(261,5461
+void c_sd(279,5827
+void c_cgsd(291,6084
+SEXP cgsd(355,7450
+
+cpdag.c,738
+#define ABSENT 5,83
+#define PRESENT 6,104
+#define FIXED 7,125
+#define IMMUTABLE 8,146
+#define UNCHANGED 10,168
+#define CHANGED 11,189
+SEXP vstructures(29,1043
+static SEXP amat2vstructs(72,2302
+static int fix_arcs(137,3902
+SEXP cpdag(229,6232
+static void scan_graph(341,9625
+static void mark_vstructures(382,10607
+static void unmark_shielded(455,12574
+static int vstructures_and_cycles(527,14595
+static int prevent_cycles(549,15150
+short int creates_unshielded_collider(602,16439
+static int prevent_additional_vstructures(625,17062
+static int creates_conflicts(796,22164
+static int prevent_conflicts(822,22647
+static int find_chain(886,24293
+static int prevent_chains(923,25323
+static void renormalize_amat(966,26363
+
+cpdist.c,22
+SEXP cpdist_lw(6,119
+
+ctest.c,335
+static double ct_discrete(12,307
+static double ct_gaustests_complete(59,1660
+static double ct_gaustests_with_missing(145,4159
+double c_micg_chisq(233,6766
+static double ct_micg_complete(300,8788
+static double ct_micg_with_missing(337,9788
+static double ct_dperm(412,12270
+static double ct_gperm(435,12844
+SEXP ctest(503,14308
+
+data.frame.c,164
+SEXP minimal_data_frame(6,143
+SEXP dataframe_column(40,752
+SEXP c_dataframe_column(46,910
+SEXP node2df(112,2357
+SEXP fitnode2df(149,3317
+SEXP fit2df(158,3522
+
+data.table.c,1008
+void meta_init_flags(7,171
+void meta_copy_names(33,754
+void meta_drop_flagged(45,1055
+void meta_subset_columns(72,1625
+void meta_copy(95,2162
+void print_meta(107,2370
+void FreeMETA(122,2763
+ddata ddata_from_SEXP(131,2927
+ddata empty_ddata(156,3451
+void print_ddata(169,3672
+void ddata_drop_flagged(187,3965
+void ddata_subset_columns(209,4399
+void FreeDDT(227,4787
+gdata gdata_from_SEXP(244,5178
+gdata new_gdata(263,5619
+gdata empty_gdata(274,5810
+void gdata_cache_means(287,6041
+void print_gdata(294,6238
+void gdata_drop_flagged(313,6547
+void gdata_subset_columns(336,7019
+void gdata_incomplete_cases_range(354,7411
+void gdata_subsample_by_logical(370,7735
+void FreeGDT(390,8272
+cgdata cgdata_from_SEXP(407,8675
+cgdata new_cgdata(482,10391
+cgdata empty_cgdata(496,10689
+void print_cgdata(514,11126
+void cgdata_drop_flagged(543,11625
+void cgdata_subset_columns(581,12410
+void cgdata_incomplete_cases(615,13146
+void cgdata_subsample_by_logical(641,13637
+void FreeCGDT(673,14540
+
+dedup.c,18
+SEXP dedup 8,211
+
+df.adjust.c,82
+double discrete_df(4,55
+double discrete_cdf(45,957
+double gaussian_cdf(92,1983
+
+dirichlet.averaged.posterior.c,86
+double adpost(7,187
+double acdpost(43,1059
+double dirichlet_averaged_node(100,2368
+
+dirichlet.posterior.c,75
+double dpost(7,179
+double cdpost(72,1762
+double dirichlet_node(150,3468
+
+discrete.loglikelihood.c,69
+double dlik(6,113
+double cdlik(30,622
+double loglik_dnode(69,1620
+
+discrete.monte.carlo.c,166
+#define allocfact(7,159
+void c_mcarlo(19,627
+void c_cmcarlo(175,4677
+static double mc_jt(343,9083
+static double mc_cjt(375,9725
+static double mc_cvjt(395,10092
+
+discrete.predictive.loglikelihood.c,84
+double pdnode(7,145
+double cpdnode(33,791
+double predictive_loglik_dnode(76,2015
+
+discrete.tests.c,204
+#define MI_PART(4,55
+SEXP mi(10,314
+double c_chisqtest(31,876
+double c_cchisqtest(75,2154
+double mi_kernel(120,3552
+double x2_kernel(135,3908
+double cmi_kernel(157,4400
+double cx2_kernel(174,4831
+
+enums.c,154
+#define ENTRY(6,111
+test_e test_to_enum(8,181
+fitted_node_e fitted_node_to_enum(40,889
+score_e score_to_enum(55,1212
+gprior_e gprior_to_enum(81,1804
+
+fast.lm.c,44
+SEXP fast_lm(6,153
+SEXP fast_cglm(74,2486
+
+filter.arcs.c,82
+SEXP unique_arcs(7,153
+SEXP c_unique_arcs(14,317
+SEXP which_undirected(75,1832
+
+fitted.c,252
+SEXP root_nodes(5,95
+SEXP fit2arcs(76,2006
+#define MATCH_NODES(125,3211
+#define BLANKET	137,3705
+#define NEIGHBOUR	138,3725
+#define PARENT	139,3746
+#define CHILD	140,3765
+#define TARGET	141,3783
+SEXP fitted_mb(144,3863
+SEXP num_arcs(200,5295
+
+gaussian.loglikelihood.c,69
+double glik(7,147
+double cglik(47,949
+double loglik_gnode(84,1980
+
+gaussian.monte.carlo.c,88
+static double mc_cov(10,272
+void c_gauss_mcarlo(23,511
+void c_gauss_cmcarlo(138,3182
+
+gaussian.predictive.loglikelihood.c,85
+double pgnode(7,147
+double cpgnode(47,970
+double predictive_loglik_gnode(104,2527
+
+gaussian.tests.c,82
+double cor_t_trans(5,110
+double cor_zf_trans(12,270
+double cor_mi_trans(19,438
+
+globals.c,263
+SEXP BN_ModelstringSymbol;3,28
+SEXP BN_NodesSymbol;4,55
+SEXP BN_ProbSymbol;5,76
+SEXP BN_MethodSymbol;6,96
+SEXP BN_WeightsSymbol;7,118
+SEXP BN_DsepsetSymbol;8,141
+SEXP TRUESEXP,9,164
+SEXP TRUESEXP, FALSESEXP;9,164
+SEXP onLoad(11,191
+SEXP onUnload(29,683
+
+graph.generation.c,332
+SEXP empty_graph(20,892
+SEXP ordered_graph(73,2320
+#define ORDERED_AMAT(91,2900
+SEXP ide_cozman_graph(161,4982
+static SEXP ic_2nodes(197,5882
+static SEXP c_ide_cozman(319,8973
+#define UPDATE_NODE_CACHE(402,11947
+static SEXP bn_base_structure(546,16102
+static int ic_logic(574,17031
+static void print_modelstring(711,21242
+
+graph.priors.c,200
+double graph_prior_prob(13,393
+#define PARENT 71,2027
+#define CHILD 72,2044
+double castelo_prior(74,2062
+SEXP castelo_completion(177,4713
+#define ASSIGN(231,6374
+double marginal_prior(314,8438
+
+hash.c,135
+SEXP arc_hash(8,267
+void c_arc_hash(27,609
+SEXP arc_hash_matrix(55,1093
+SEXP arc_hash_dataframe(81,1785
+SEXP c_amat_hash(110,2687
+
+hc.cache.lookup.c,151
+SEXP score_cache_fill(8,170
+SEXP hc_opt_step(129,3883
+void bestop_update(363,10248
+SEXP hc_to_be_added(371,10479
+#define FLIP_FROM_LIST(439,12289
+
+htest.c,26
+SEXP c_create_htest(4,55
+
+indep.test.c,23
+SEXP indep_test(5,112
+
+init.c,115
+#define CALL_ENTRY(5,86
+static const R_CallMethodDef CallEntries[CallEntries8,188
+void R_init_bnlearn(101,2986
+
+is.dag.c,19
+SEXP is_dag(9,275
+
+is.row.equal.c,105
+#define ARC(3,28
+SEXP is_row_equal(6,133
+#undef ARC49,969
+#define ARC(50,980
+SEXP is_listed(53,1084
+
+jonckheere.c,126
+double c_jt(8,221
+double c_cjt(42,1272
+double c_jt_mean(75,2301
+double c_jt_var(88,2552
+static double c_jt_stat(127,3783
+
+least.squares.c,216
+static void c_ols0(7,183
+static void c_ols1(28,719
+static void c_ols2(128,2825
+static void c_olsp(269,6680
+static void c_ols0_with_missing(286,7217
+static void c_olsp_with_missing(337,8253
+void c_ols(405,9931
+
+likelihood.weighting.c,48
+void c_lw_weights(4,54
+SEXP lw_weights(31,757
+
+linear.algebra.c,82
+double c_det(10,337
+void c_svd(54,1253
+void c_ginv(83,2117
+void c_qr(132,3550
+
+linear.correlation.c,140
+#define COR_BOUNDS(7,143
+#define SAFE_COR(17,467
+double c_fast_cor(21,646
+double c_fast_pcor(42,1175
+double c_cor_with_missing(95,2736
+
+loss.c,188
+#define UPDATE_LOSS(21,868
+SEXP entropy_loss(29,1039
+double c_entropy_loss(55,1714
+double c_gloss(180,5578
+double c_dloss(227,6691
+double c_cgloss(281,7909
+SEXP class_err(376,10416
+
+map.lw.c,92
+static double posterior_mean(7,147
+static int posterior_mode(50,930
+SEXP mappred(90,1993
+
+mi.matrix.c,382
+#define DISCRETE_MAXIMUM_LIKELIHOOD 8,166
+#define GAUSSIAN_MAXIMUM_LIKELIHOOD 9,204
+#define DISCRETE_NETWORK(10,242
+#define LIST_MUTUAL_INFORMATION_COEFS(12,305
+#define CONVERT_TO_ARC_SET(20,589
+#define DEREFERENCE_DATA_FRAME(37,1231
+void mi_matrix(57,2014
+SEXP aracne(121,3390
+static int chow_liu_blacklist(285,7539
+SEXP chow_liu(296,7786
+SEXP tree_directions(473,12375
+
+nparams.c,55
+SEXP nparams_cgnet(7,202
+SEXP nparams_fitted(68,2025
+
+parse.c,23
+SEXP match_brace(4,66
+
+path.c,106
+SEXP has_pdag_path(5,83
+int c_has_path(27,747
+int c_directed_path(162,4129
+int c_uptri3_path(256,6576
+
+pdag2dag.c,41
+SEXP pdag2dag(8,206
+SEXP dag2ug(43,970
+
+per.node.score.c,85
+#define DEBUG_BEFORE(4,56
+SEXP per_node_score(11,336
+void c_per_node_score(31,908
+
+predict.c,130
+SEXP gpred(10,267
+SEXP cgpred(38,960
+SEXP dpred(84,2136
+SEXP cdpred(197,5213
+SEXP ccgpred(346,9393
+SEXP naivepred(405,11114
+
+rbn.c,241
+SEXP rbn_master(18,690
+void c_rbn_master(34,1013
+void rbn_discrete_fixed(222,6000
+void rbn_discrete_root(253,6754
+void rbn_discrete_cond(289,7674
+void rbn_gaussian_fixed(337,9121
+void rbn_gaussian(363,9715
+void rbn_mixedcg(400,10595
+
+rcont2.c,20
+void c_rcont2(4,84
+
+roundrobin.test.c,420
+static void rrd_disc_message(11,260
+static void rrd_gauss_message(22,607
+static void rrd_discrete(34,1009
+static void rrd_gaustests_complete(108,3349
+static void rrd_gaustests_with_missing(225,6831
+double rrd_micg_chisq(351,10592
+static void rrd_micg_complete(418,12708
+static void rrd_micg_with_missing(487,14621
+static void rrd_dperm(593,18058
+static void rrd_gperm(645,19634
+SEXP roundrobin_test(723,21780
+
+sampling.c,125
+void SampleNoReplace(17,693
+void SampleReplace(40,1269
+void ProbSampleReplace(55,1753
+void CondProbSampleReplace(87,2387
+
+sanitization.c,118
+SEXP data_frame_finite(4,56
+SEXP count_observed_values(24,500
+SEXP data_type(83,1832
+SEXP fitted_vs_data 138,3009
+
+score.delta.c,222
+static SEXP score_delta_helper(5,85
+static double robust_score_difference(232,7266
+SEXP score_delta_decomposable(258,8030
+SEXP score_delta_cs(302,9707
+SEXP score_delta_monolithic(401,13320
+SEXP score_delta(435,14077
+
+shd.c,15
+SEXP shd(5,83
+
+shrinkage.c,190
+#define TRUNCATE_LAMBDA(7,144
+double c_shmi(14,310
+double c_shcmi(77,1997
+void mi_lambda(163,4296
+double cor_lambda(210,5571
+double covmat_lambda(254,6825
+void covmat_shrink(312,8331
+
+simulation.c,65
+SEXP topological_ordering(6,143
+void topological_sort(112,2725
+
+strings.c,79
+SEXP string_setdiff(4,82
+SEXP string_delete(26,696
+SEXP mkStringVec(60,1323
+
+subsets.c,71
+void first_subset(5,114
+int next_subset(13,293
+SEXP subsets(54,1107
+
+tabu.c,144
+SEXP tabu_hash(20,946
+int tabu_match(38,1364
+SEXP tabu_step(91,2816
+void tabu_add(189,5967
+void tabu_del(271,8205
+void tabu_rev(344,10096
+
+test.counter.c,123
+double test_counter 4,70
+SEXP increment_test_counter(7,137
+SEXP reset_test_counter(26,425
+SEXP get_test_counter(35,574
+
+tiers.c,17
+SEXP tiers(4,52
+
+unique.c,37
+SEXP unique(4,82
+SEXP dupe(59,1148
+
+utest.c,366
+#define DISCRETE_SWAP_X(7,148
+#define GAUSSIAN_SWAP_X(12,271
+static double ut_discrete(18,455
+static double ut_gaustests_complete(60,1630
+static double ut_gaustests_with_missing(126,3294
+static double ut_micg_complete(190,5100
+static double ut_micg_with_missing(272,7224
+static double ut_dperm(342,9098
+static double ut_gperm(363,9569
+SEXP utest(423,10676
+
+which.max.c,69
+int d_which_max(5,128
+int ld_which_max(41,788
+int all_max(77,1448
+
+wishart.posterior.c,73
+double wpost(9,206
+double cwpost(41,1119
+double wishart_node(105,3207
+
+include/data.structures.h,141
+#define DATA_STRUCTURES_HEADER2,31
+} flags;14,568
+} meta;24,841
+} ddata;33,1081
+} gdata;42,1326
+} cgdata;56,1921
+} covariance;68,2377
+
+include/data.table.h,39
+#define gdata_incomplete_cases(23,900
+
+include/fitted.h,99
+  ENOFIT 4,96
+  DNODE 5,151
+  ONODE 6,192
+  GNODE 7,229
+  CGNODE 8,267
+} fitted_node_e;9,317
+
+include/globals.h,28
+#define MACHINE_TOL 13,339
+
+include/matrix.h,149
+#define UPTRI(16,405
+#define UPTRI2(22,621
+#define UPTRI3(27,798
+#define UPTRI_MATRIX(31,965
+#define UPTRI3_MATRIX(35,1118
+#define CMC(38,1220
+
+include/rcore.h,239
+#define MAYBE_REFERENCED(13,291
+#define Free1D(23,625
+#define Free2D(28,711
+#define Free3D(33,805
+#define isTRUE(40,929
+#define INT(41,985
+#define NUM(42,1014
+#define NODE(43,1040
+#define NLEVELS(46,1141
+#define NLEVELS2(47,1197
+
+include/sampling.h,32
+#define RandomPermutation(4,75
+
+include/scores.h,459
+  ENOSCORE 4,95
+  LOGLIK 6,150
+  PRED_LOGLIK 7,211
+  AIC 8,283
+  BIC 9,333
+  BDE 10,383
+  BDS 11,450
+  BDJ 12,513
+  K2 13,584
+  MBDE 14,624
+  BDLA 15,712
+  LOGLIK_G 17,787
+  PRED_LOGLIK_G 18,848
+  AIC_G 19,920
+  BIC_G 20,970
+  BGE 21,1020
+  LOGLIK_CG 23,1087
+  PRED_LOGLIK_CG 24,1160
+  AIC_CG 25,1244
+  BIC_CG 26,1306
+} score_e;27,1368
+  ENOPRIOR 33,1523
+  UNIFORM 34,1580
+  VSP 35,1619
+  CS 36,1669
+  MU 37,1717
+} gprior_e;38,1765
+
+include/tests.h,707
+  ENOTEST 5,123
+  MI 6,173
+  MI_ADF 7,246
+  X2 8,316
+  X2_ADF 9,384
+  JT 10,449
+  COR 11,499
+  ZF 12,543
+  MI_G 13,584
+  MI_CG 14,642
+  MI_SH 15,719
+  MI_G_SH 16,778
+  MC_MI 17,846
+  MC_X2 18,909
+  SP_MI 19,967
+  SP_X2 20,1033
+  MC_JT 21,1094
+  SMC_MI 22,1158
+  SMC_X2 23,1232
+  SMC_JT 24,1301
+  MC_COR 25,1376
+  MC_MI_G 26,1434
+  MC_ZF 27,1506
+  SMC_COR 28,1561
+  SMC_MI_G 29,1630
+  SMC_ZF 30,1713
+} test_e;31,1779
+#define IS_DISCRETE_ASYMPTOTIC_TEST(35,1849
+#define IS_DISCRETE_PERMUTATION_TEST(36,1929
+#define IS_CONTINUOUS_PERMUTATION_TEST(37,2000
+#define IS_SMC(38,2056
+#define IS_TWO_SIDED(39,2126
+#define SEQUENTIAL_COUNTER_CHECK(43,2300
+#define gaussian_df(96,4400
+
+include/sets.h,0
+
+include/register.h,0
+
+include/loss.h,0
+
+include/learning.h,0
+
+include/graph.h,0
+
+include/data.frame.h,0
+
+include/covariance.h,0
+
+include/bn.h,0
+
+include/blas.h,0
