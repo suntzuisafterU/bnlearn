@@ -1,4 +1,5 @@
 
+# TODO: learns b-net structure. Are local dists used here at all?
 # constraint-based learning algorithms.
 bnlearn = function(x, cluster = NULL, whitelist = NULL, blacklist = NULL,
     test = NULL, alpha = NULL, B = NULL, method = "gs", max.sx = NULL,

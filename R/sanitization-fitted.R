@@ -161,7 +161,12 @@ check.dnode.vs.parents = function(node, new, parents) {
 
 }#CHECK.DNODE.VS.PARENTS
 
+# TODO: Is this the type of node we would be creating?
+#       Covers cgnode as well.
 # check the consistency of a bn.fit.gnode or a bn.fit.cgnode.
+# params:
+#   x:    dist ?field? of node
+#   node: the node
 check.gnode = function(x, node) {
 
   components =  c("coef", "fitted", "resid", "sd", "configs")

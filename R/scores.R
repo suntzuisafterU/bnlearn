@@ -6,7 +6,7 @@ per.node.score = function(network, data, score, targets, extra.args,
   .Call(call_per_node_score,
         network = network,
         data = data,
-        score = score,
+        score = score, # TODO: What type is score?
         targets = targets,
         extra.args = extra.args,
         debug = debug)

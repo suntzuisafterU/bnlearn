@@ -25,7 +25,7 @@ custom.fit.backend = function(x, dist, discrete, ordinal, debug = FALSE) {
 
     }#THEN
 
-    if (is.ndmatrix(dist[[node]])) {
+    if (is.ndmatrix(dist[[node]])) { # is x a table, matrix, and array? (Is it discrete?)
 
       # first self-check the local distribution.
       dist[[node]] = check.dnode(dist[[node]], node = node)
