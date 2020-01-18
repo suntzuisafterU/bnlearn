@@ -380,9 +380,11 @@ as.lm.bn = function(x, data, ...) {
 
 }#AS.LM.BN
 
+# TODO: rabbit hole, follow it.
 # refit the local distributions of a Gaussian network using lm().
 as.lm.bn.fit = as.lm.bn
 
+# TODO: Eldorado?
 # refit a single local distribution from a Gaussian network using lm().
 as.lm.bn.fit.gnode = function(x, data, ...) {
 

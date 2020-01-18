@@ -25,6 +25,7 @@ custom.fit.backend = function(x, dist, discrete, ordinal, debug = FALSE) {
 
     }#THEN
 
+    # TODO: must be TABLE MATRIX && ARRAY ==> classes
     if (is.ndmatrix(dist[[node]])) { # is x a table, matrix, and array? (Is it discrete?)
 
       # first self-check the local distribution.
@@ -44,6 +45,7 @@ custom.fit.backend = function(x, dist, discrete, ordinal, debug = FALSE) {
       if (node %in% ordinal)
         stop("node", node, " is set to be ordinal but are not discrete.")
 
+      # TODO: regression models objects??
       # transparently convert regression models' objects.
       if (is(dist[[node]], c("lm", "glm", "penfit"))) {
 
@@ -170,6 +172,7 @@ full.spec.backend = function(fitted, dist) {
 
 }#FULL.SPEC.BACKEND
 
+# TODO: rabbit?
 # return the corect class based on the node classes.
 determine.fitted.class = function(fitted) {
 
