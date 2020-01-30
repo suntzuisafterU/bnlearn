@@ -169,6 +169,7 @@ cgsd = function(x, configs = NULL, p = 1L) {
 
 }#CGSD
 
+# TODO: These functions may need to be modified.
 # wrapper around coefficients() to avoid dispatch.
 .coefficients = function(x) {
 
@@ -189,6 +190,7 @@ cgsd = function(x, configs = NULL, p = 1L) {
 
 }#.COEFFICIENTS
 
+# TODO: .residuals may need to be modified.
 # wrapper around residuals() to avoid dispatch.
 .residuals = function(x) {
 
@@ -199,6 +201,7 @@ cgsd = function(x, configs = NULL, p = 1L) {
 
 }#.RESIDUALS
 
+# TODO: .fitted may need to be modified.
 # wrapper around fitted() to avoid dispatch.
 .fitted = function(x) {
 
