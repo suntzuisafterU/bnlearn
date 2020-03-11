@@ -92,6 +92,7 @@ bn.fit.backend.discrete = function(dag, node, data, method, extra.args,
 
 }#BN.FIT.BACKEND.DISCRETE
 
+# TODO: March 10/2020: Here is the continuous fitting procedure.
 bn.fit.backend.continuous = function(dag, node, data, method, extra.args,
     data.info, keep.fitted = TRUE, debug = FALSE) {
 
@@ -113,6 +114,7 @@ bn.fit.backend.continuous = function(dag, node, data, method, extra.args,
 
   if (method == "mle") {
 
+    # TODO: Here is the 'mle' gaussian fitted dist.
     # the relevant quantities of the normal distribution are those usually found
     # in an lm object: coefficients, fitted values and residuals, plus the
     # residuals standard deviation.

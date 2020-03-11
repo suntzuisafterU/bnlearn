@@ -49,6 +49,7 @@ custom.fit.backend = function(x, dist, discrete, ordinal, debug = FALSE) {
       # transparently convert regression models' objects.
       if (is(dist[[node]], c("lm", "glm", "penfit"))) {
 
+        # TODO: HERE; This is how the nodes are stored.  How are they used?
         # ordinary least squares, ridge, lasso, and elastic net.
         dist[[node]] =
           list(coef = .coefficients(dist[[node]]),
