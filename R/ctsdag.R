@@ -55,6 +55,7 @@ arc.traverser = function(arc.status, cur) {
 
 }#ARC.TRAVERSER
 
+# TODO: March/16 2020: How are arc priors set by graphical priors and how is this used??
 # get any arc probabilities set by graphical priors.
 get.arc.prior.probabilities = function(learning.args, nodes) {
 
