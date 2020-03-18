@@ -336,6 +336,7 @@ check.graph.prior = function(prior, network) {
 
 }#CHECK.GRAPH.PRIOR
 
+# TODO: Figure out what is going on with graph hyperparameters and prior dists.
 # check the sparsity parameter of the prior distribution over the graph space.
 check.graph.hyperparameters = function(beta, prior, network, data,
     learning = FALSE) {
@@ -343,6 +344,7 @@ check.graph.hyperparameters = function(beta, prior, network, data,
   default.beta =
     list("uniform" = NULL, "vsp" = 1/(ncol(data) - 1),
       "marginal" = structure(0.5, nodes = names(network$nodes)),
+      # TODO: cs.completed.prior: What is this for? Prior dist on edges... What does this mean exactly??
       "cs" = cs.completed.prior(data.frame(character(0), character(0),
              numeric(0)), names(data)))
 
@@ -390,6 +392,7 @@ check.graph.hyperparameters = function(beta, prior, network, data,
       # check that the first two columns contain only valid arcs.
       check.arcs(beta[, c("from", "to")], nodes = names(data))
 
+      # TODO: Why is completed.prior used right here???
       # complete the user-specified prior.
       beta = cs.completed.prior(beta, names(data), learning)
 

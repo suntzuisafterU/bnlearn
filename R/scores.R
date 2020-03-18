@@ -13,6 +13,7 @@ per.node.score = function(network, data, score, targets, extra.args,
 
 }#PER.NODE.SCORE
 
+# TODO: completed prior over arcs?? Castelo and Siebes ==> Get this paper.
 # complete a prior over arcs as per Castelo and Siebes.
 cs.completed.prior = function(beta, nodes, learning = FALSE) {
 

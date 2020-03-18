@@ -92,6 +92,7 @@ get.arc.prior.probabilities = function(learning.args, nodes) {
 
   }#THEN
 
+  # TODO: Why is completed.prior used here???
   if (!is(probs, "prior.cs"))
     probs = cs.completed.prior(probs, nodes, learning = FALSE)
 
@@ -117,6 +118,7 @@ skewed.beta = function(beta, dag, debug = FALSE) {
   }#THEN
 
   node_names = nodes(dag)
+  # TODO: completed.prior is used right here.  Why??
   beta_cs = cs.completed.prior(beta, node_names)
   near_prob = apply(beta_cs[, c("fwd", "bkwd")], 1, function(row) {
     (abs(row["fwd"] - row["bkwd"]) < 0.01) &
