@@ -1,4 +1,5 @@
 
+# TODO: April 26/2020: Understand how arc strength is used for structure learning.
 # compute arcs' strength as the p-value of the test for their removal.
 arc.strength.test = function(network, data, test, alpha, B, complete,
     debug = FALSE) {
